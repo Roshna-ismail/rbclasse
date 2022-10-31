@@ -27,9 +27,9 @@ from datetime import timedelta
 SECRET_KEY = 'django-insecure-jkkab)y!n*=e1w9w%1939+cqkj0-_cm(evbc65&-s%qede_9z&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['rbclass.herokuapp.com','127.0.0.1']
 
 # Application definition
 
@@ -236,7 +236,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 
-
+STATIC_URL=os.path.join(BASE_DIR,'staticfiles')
 MEDIA_URL='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
