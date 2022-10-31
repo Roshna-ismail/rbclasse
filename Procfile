@@ -1,1 +1,0 @@
-web: gunicorn new_lms.wsgi --log-file -
